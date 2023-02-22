@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <title> selector </title>
+	 
+<style>
+h1{
+	  color:Red;
+	  text-align:center;
+	  }
+	  h2{
+		  background-color:orange;
+		  font-size:30px; 
+	  }
+	  h3{
+		  text-decoration:underline;
+		  color:blue;
+	  }
+  /---pseudo-class---/
+     	 /* unvisited link */
+		a:link {
+		  color: #FF0000;
+		}
+
+		/* visited link */
+		a:visited {
+		  color: #00FF00;
+		}
+
+		/* mouse over link */
+		a:hover {
+		  color: #FF00FF;
+		}
+
+		/* selected link */
+		a:active {
+		  color: #0000FF;
+		}
+	
+	    p.ping::first-line {
+		  color: #ff0000;
+		  font-variant: small-caps;
+		}
+	
+		 p.ping1::first-letter {
+		  color:blue;
+		  font-variant: small-caps;
+		}
+		
+		p.ping2::first-letter {
+		  color: #ff0000;
+		  font-size: xx-large;
+		}
+
+		p.ping2::first-line {
+		  color: orange;
+		  font-variant: small-caps;
+		}
+
+		h4::b	efore{
+			content:"Hai";
+			color:red;
+		}
+		
+		h5::after{
+			content:"hai";
+			color:red;
+		}
+		::marker { 
+		  color: green;
+		  font-size: 23px;
+		}
+		::selection {
+			  color: red;
+			  background: yellow;
+			}
+/----attribute selector----/
+        /---target selector--/
+		  a[target] {
+			  background-color: pink;
+			}
+
+
+</style>
+</head>
+
+<body>
+     <!---pseudo classes---->
+	     <h2> Pseudo-class </h2>
+			 <p> Styling a link depending on state </p>
+			   <a href="https://www.w3schools.com/css/default.asp">CSS Tutorial </a>
+	  <hr class="one">
+	  <!---pseudo elements--->
+	  <h2> Pseudo-elements </h2>
+	   <!---pseudo elements first line small caps--->
+	          <h3> first line</h3>
+            <p class="ping">You can use the ::first-line pseudo-element to add a special effect to the first line of a text.
+			Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+		  <!---pseudo elements first letter -->
+		     <h3> first letter </h3>
+		  <p class="ping1">You can use the ::first-line pseudo-element to add a special effect to the first line of a text.
+			Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+		  <!---multiple pseudo elements -->
+		     <h3> multiple pseudo-element</h3>
+		      <p class="ping2">You can use the ::first-line pseudo-element to add a special effect to the first line of a text.
+			Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+		  <!---before pseudo elements -->
+		  <h3> before element</h3>
+              <h4>html,css,js</h4>
+			  <p> hai welcome ,how are you </p>
+		 <!---after pseudo elements -->
+		 <h3> after element</h3>
+              <h5> html,css,js</h5>
+			  <p> hai welcome ,how are you </p>
+		 <!---marker pseudo elements -->
+		 <h3> marker element</h3>
+			<ul>
+			  <li>Coffee</li>
+			  <li>Tea</li>
+			  <li>Milk</li>
+			</ul>
+
+			<ol>
+			  <li>First</li>
+			  <li>Second</li>
+			  <li>Third</li>
+			</ol>
+           <!---selection pseudo elements -->
+		   <h3> selection element</h3>
+			<p>Select some text on this page:</p>
+
+			<p>This is a paragraph.</p>
+			<div>This is some text in a div element.</div>
+	<hr>
+      <h2> CSS Attribute Selectors </h2>
+	  <!---CSS target[attribute] Selector-->
+        <h3> CSS target[attribute] Selector </h3>
+		   <p>The link with target="_blank" gets a yellow background:</p>
+				<a href="https://www.w3schools.com">w3schools.com</a>
+				<a href="http://www.disney.com" target="_blank">disney.com</a>
+				<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+         
+             <h3>  CSS [attribute~="value"] Selector </h3>
+                
+            
+               <h3> CSS [attribute|="value"] Selector </h3>
+		
+              <h3>CSS [attribute^="value"] Selector</h3>
+			     
+		       <h3> CSS [attribute$="value"] Selector</h3>
+			      
+               <h3> CSS [attribute*="value"] Selector</h3>
+	
+</body>
+</html>
